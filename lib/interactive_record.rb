@@ -50,7 +50,11 @@ class InteractiveRecord
   end
   def self.find_by(property)
 
+<<<<<<< HEAD
     sql = "SELECT * FROM #{self.table_name} WHERE #{property.keys.first.to_s} = '#{property.values.first.to_s}'"
+=======
+    sql = "SELECT * FROM #{self.table_name} WHERE #{property.keys.first.to_s}" = "'#{property.values.first.to_s}'"
+>>>>>>> 68c188422809a1c604f7f4a8c3d131b1c039ca52
     DB[:conn].execute(sql)
   end
 end
